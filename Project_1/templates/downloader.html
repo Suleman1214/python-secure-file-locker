@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your File is Ready</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>✅ File Ready</h1>
+
+    <p>Your file has been successfully processed.</p>
+
+    <a href="{{ url_for('download_file', filename=filename) }}">
+        <button style="width:100%;">Download File</button>
+    </a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure File Locker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔒 Secure File Locker</h1>
+
+        <!-- Show messages from backend -->
+        {% if message %}
+            <div class="message">{{ message }}</div>
+        {% endif %}
+
+        <form action="/process" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+            <label>Select File</label>
+            <input type="file" name="file" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+
+            <label>Mode</label>
+            <select name="mode" required>
+                <option value="encrypt">Encrypt File</option>
+                <option value="decrypt">Decrypt File</option>
+            </select>
+
+            <button type="submit">Start</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

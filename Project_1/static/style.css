@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 380px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #0066ff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0053cc;
+}
+
+.message {
+    background: #e0ffe0;
+    padding: 10px;
+    border-left: 5px solid #00b300;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
