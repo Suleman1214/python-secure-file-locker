@@ -41,7 +41,7 @@ def _cleanup_later(paths: list[str], delay: int = 30) -> None:
         sleep(delay)
         for p in paths:
             try:
-                if os.path.exists(p)
+                if os.path.exists(p):
                     os.remove(p)
             except Exception:
                 pass
